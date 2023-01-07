@@ -1,0 +1,18 @@
+POST http://localhost:5500/api/send-otp HTTP/1.1
+Content-Type: application/json
+
+{
+    "phone":"+918299451256"
+
+}
+
+###
+POST http://localhost:5500/api/verify-otp HTTP/1.1
+Content-Type: application/json
+
+{
+    "phone":"+918299451256",
+    "otp":"2342",
+    "hash":"d83c8a7548054ed2e8473a20179be017421369b7c7c9ae396674000c6c680821.1671646049259"
+
+} 
